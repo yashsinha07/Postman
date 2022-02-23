@@ -30,7 +30,7 @@
 					}
 				],
 				"url": {
-					"raw": "http://localhost:8080/app/{{orgId}}/migrate",
+					"raw": "http://localhost:8080/app/{{orgId}}/migrate?redirectUrl=www.google.com",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -40,6 +40,12 @@
 						"app",
 						"{{orgId}}",
 						"migrate"
+					],
+					"query": [
+						{
+							"key": "redirectUrl",
+							"value": "www.google.com"
+						}
 					]
 				}
 			},
